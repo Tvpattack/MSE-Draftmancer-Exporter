@@ -346,11 +346,11 @@ script:
 	}
 
 	write_booster := {
-		"[RareSlot("+ if options.basic_slot == "" then "1 " else options.basic_slot+")]
+		"[RareSlot("+ if options.rare_slot == "" then "1 " else options.rare_slot+")]
 		"+ write_rares() + write_mythics()+
-		"[UncommonSlot("+ if options.basic_slot == "" then "3 " else options.basic_slot+")]
+		"[UncommonSlot("+ if options.uncommon_slot == "" then "3 " else options.uncommon_slot+")]
 		"+ write_uncommons()+
-		"[CommonSlot("+ if options.basic_slot == "" then "10 " else options.basic_slot+")]
+		"[CommonSlot("+ if options.common_slot == "" then "10 " else options.common_slot+")]
 		"+ write_commons()+
 		"[BasicSlot("+ if options.basic_slot == "" then "1 " else options.basic_slot+")]
 		"+ write_basics()
